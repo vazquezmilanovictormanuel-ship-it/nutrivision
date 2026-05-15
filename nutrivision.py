@@ -195,7 +195,7 @@ def img_to_b64(uploaded_file) -> tuple[str, str]:
 def call_claude(messages: list) -> str:
     client = Anthropic()
     resp = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-5",
         max_tokens=1200,
         messages=messages,
     )
